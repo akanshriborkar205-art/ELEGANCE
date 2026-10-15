@@ -618,5 +618,62 @@
   
   
   <input name="animation" type="hidden">
+	
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --elegance-pink: #f6e7e9;
+  --elegance-cream: #fffaf4;
+  --elegance-burgundy: #762c42;
+  --elegance-gold: #c49a56;
+}
+
+body {
+  background-color: var(--elegance-cream);
+}
+
+.navbar {
+  box-shadow: 0 3px 15px rgba(80, 35, 45, 0.10);
+}
+
+.btn-primary,
+.btn-danger {
+  background-color: var(--elegance-burgundy) !important;
+  border-color: var(--elegance-burgundy) !important;
+}
+
+.btn-primary:hover,
+.btn-danger:hover,
+.btn-primary-outline:hover,
+.btn-danger-outline:hover {
+  background-color: var(--elegance-gold) !important;
+  border-color: var(--elegance-gold) !important;
+  color: white !important;
+  transform: translateY(-3px);
+}
+
+.item-wrapper,
+.card-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-wrapper:hover,
+.card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(80, 35, 45, 0.12);
+}
+
+img {
+  border-radius: 8px;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+</style>
+
   </body>
 </html>
